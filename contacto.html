@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enfermeria Intensiva</title>
+    <link rel="shortcut icon" href="imagenes/img-favicom.jpg" type="image/x-icon">
+    <!-- tiene que ser un cuadradito chiquitito que acompaña al logo en la ventana -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bodyGrid">
+    <nav class="gridEncabezado">
+        <a href="index.html">
+            <img src="imagenes/logo-enfermeria.png" alt="logo de Enfermeria Intensiva">
+        </a>
+        <ul>
+            <li class="nav-listas">
+                <a href="mi-uci.html">Mi UCI</a>
+            </li>
+            <li class="nav-listas">
+                <a href="apuntes.html">Apuntes</a>
+            </li>
+            <li class="nav-listas">
+                <a href="revistas.html">Revistas</a>
+            </li>
+            <li class="nav-listas">
+                <a href="enlaces.html">Enlaces</a>
+            </li>
+            <li class="nav-listas">
+                <a href="contacto.html">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="gridImagenCentral">
+        <img src="imagenes/img-body.jpg" alt="Imagen de una enfermera">
+    </header>
+    <main class="gridApuntes">
+        <section class="apuntes_articulo">
+            <h1 class="bg-red">Contacto</h1>
+            <form action="envio.php" class="formulario">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" required="">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <br>
+                <label for="tel">Teléfono:</label>
+                <input type="tel" id="tel">
+                <br>
+                <label for="comentario">Dejanos un mensaje</label>
+                <br>
+                <textarea name="" id="comentario" cols="30" rows="10"></textarea>
+                <br>
+                <input type="reset" name="cancelar">
+                <input type="submit" name="Enviar">
+            </form>
+            <iframe class="formulario"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.104330867019!2d-57.5627150855585!3d-37.99802687971933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584deac3e586685%3A0xb868273df999ea4d!2sAv.%20Col%C3%B3n%203629%2C%20B7600FZD%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1659573919050!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- aca puedo colocar el mapa -->
+        </section>
+    </main>
+    <footer class="gridFooter">
+        <h3 class="text-center bg-red text-color">Seguínos en nuestras redes sociales</h3>
+        <div class="redesSociales">
+            <a href="http://www.facebook.com/" target="_blank">
+                <img src="imagenes/facebook_logo_portada.jpg" alt="seguinos en facebook">
+            </a>
+            <a href="http://www.instagram.com/" target="_blank">
+                <img src="imagenes/instagram_2016_nuevo_logo.jpg" alt="seguinos en instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

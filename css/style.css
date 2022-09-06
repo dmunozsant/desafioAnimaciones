@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*selectores de grupo*/
+h1 h2 h3 {
+    text-transform: uppercase;
+
+}
+
+/*selectores de etiqueta*/
+h1 {
+    /*text-transform: capitalize; transforma en mayusculas o minusculas o primera letra en may y las demas en min*/
+    font-size: 3rem;
+    color: white;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+nav {
+    padding: 6px 20px;
+
+}
+
+nav ul {
+    list-style: none;
+    /*viñetas*/
+}
+
+nav ul li a {
+    color: rgb(200, 0, 0);
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    /*negrita*/
+}
+
+header img {
+    width:100%;
+}
+
+header{
+    border-top: 500px;
+    border-color: rgb(200, 0, 0);
+    padding: 6px 20px;
+}
+
+section p {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    /*interlineado*/
+}
+
+
+/*selectores de clase, se expresan con un punto*/
+.text-center {
+    text-align: center;
+}
+
+
+ /* FOOTER CON FLEXBOX */
+
+ .redesSociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.text-color {
+    color: white;
+}
+
+.bg-red {
+    background-color: rgb(200, 0, 0);
+}
+
+.bg-light {
+    background-color: rgba(193, 209, 225, 0.9);
+}
+
+/*box modeling*/
+.apuntes_articulo {
+    width: 90%;
+    height: auto;
+    /* margin: 50px; */
+    margin: 40px auto;
+    padding: 10px 10px;
+    border: solid rgb(110, 112, 243) 2px;
+    /* overflow-y si hay desbordamiento, pero deje mi alto automático */
+}
+
+.nav-listas{
+    display: inline-block;
+    padding-left: 1em;
+}
+
+.formulario{
+    padding: 1em;
+}
+
+.mainVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* GRID */
+
+.bodyGrid {
+    display: grid;
+    grid-template-areas: 
+    "encabezado encabezado"
+    "imagenCentral imagenCentral"
+    "apuntes apuntes"
+    "videos videos"
+    "footer footer"
+    ;
+
+}
+
+.gridEncabezado {
+    grid-area: encabezado;
+}
+
+.gridImagenCentral {
+    grid-area: imagenCentral;
+}
+
+.gridApuntes {
+    grid-area: apuntes;
+}
+
+.gridVideo {
+    grid-area: video;
+}
+
+.gridFooter {
+    grid-area: footer;
+}
+
+
+/* Vista móvil */
+
+
+@media(max-width:599px) {
+
+    .gridVideo {
+        display: none;
+    }
+
+    iframe.formulario {
+        display: none;
+    }
+
+    .bodyGrid {
+        display: grid;
+        grid-template-areas: 
+        "encabezado encabezado"
+        "imagenCentral imagenCentral"
+        "apuntes apuntes"
+        "footer footer"
+        ;
+    }
+}
