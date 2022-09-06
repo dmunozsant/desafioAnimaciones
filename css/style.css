@@ -158,8 +158,23 @@ section p {
 
 
 /* Animaciones */
+/*Animación al logo*/
 
+@keyframes animacionLogo {
+    0% {
+        opacity: 0;
+    }
 
+    100% {
+        opacity: 1;
+    }
+}
+
+.logo {
+    animation-name: animacionLogo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
 
 /* Vista móvil */
 
