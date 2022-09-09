@@ -6,33 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enfermeria Intensiva - Apuntes</title>
     <link rel="shortcut icon" href="imagenes/img-favicom.jpg" type="image/x-icon"> 
+    <!-- agrego boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css" integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">
-        <img class="logo" src="imagenes/logo-enfermeria.png" alt="logo de Enfermeria Intensiva">
-        </a>
-        <ul>
-            <li class="nav-listas">
-                <a href="mi-uci.html">Mi UCI</a>
-            </li>
-            <li class="nav-listas">
-                <a href="apuntes.html">Apuntes</a>
-            </li>
-            <li class="nav-listas">
-                <a href="revistas.html">Revistas</a>
-            </li>
-            <li class="nav-listas">
-                <a href="enlaces.html">Enlaces</a>
-            </li>
-            <li class="nav-listas">
-                <a href="contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
+    <!-- nuevo navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="imagenes/logo-enfermeria.png" alt="logo de Enfermeria Intensiva">
+            </a>
+        <!-- boton hamburguesa -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-colornav" aria-current="page" href="mi-uci.html">Mi UCI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-colornav" href="apuntes.html">Apuntes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-colornav" href="revistas.html">Revistas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-colornav" href="enlaces.html">Enlaces</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-colornav" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- fin navbar -->
     <header>
-        <img src="imagenes/img-body.jpg"  alt="Imagen de una enfermera">
+    <!-- inicio carrusel -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/congreso-terapia-2022-1.jpg" class="d-block w-100" alt="congreso de terapia 2022">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/Congreso-SAC-2022-1.png" class="d-block w-100" alt="congreso de cardiologia 2022">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/3ercongresotucuman.jpg" class="d-block w-100" alt="congreso tucuman">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- termina carrusel -->
+    
     </header>
     <main>
         <h1 class="bg-red apuntes_articulo">Enlaces</h1>
@@ -52,5 +87,7 @@
             </a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 </body>
 </html>
