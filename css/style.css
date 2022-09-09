@@ -32,29 +32,17 @@ h3 {
     font-size: 2rem;
 }
 
-nav {
-    padding: 6px 20px;
-
-}
 
 nav ul {
     list-style: none;
     /*viñetas*/
 }
 
-nav ul li a {
-    color: rgb(200, 0, 0);
-    font-size: 2rem;
-    text-decoration: none;
-    font-weight: bold;
-    /*negrita*/
-}
-
 header img {
     width:100%;
 }
 
-header{
+header {
     border-top: 500px;
     border-color: rgb(200, 0, 0);
     padding: 6px 20px;
@@ -72,15 +60,14 @@ section p {
     text-align: center;
 }
 
-
- /* FOOTER CON FLEXBOX */
-
- .redesSociales {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.text-colornav {
+    color: rgb(200, 0, 0);
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 20px
+    /*negrita*/
 }
-
 
 
 .text-color {
@@ -93,6 +80,14 @@ section p {
 
 .bg-light {
     background-color: rgba(193, 209, 225, 0.9);
+}
+
+ /* FOOTER CON FLEXBOX */
+
+ .redesSociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*box modeling*/
@@ -122,7 +117,7 @@ section p {
     justify-content: center;
 }
 
-/* GRID */
+/* GRID 
 
 .bodyGrid {
     display: grid;
@@ -155,7 +150,7 @@ section p {
 .gridFooter {
     grid-area: footer;
 }
-
+*/
 
 /* Animaciones */
 /*Animación al logo*/
